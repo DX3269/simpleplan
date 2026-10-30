@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimplePlan Media — Learn. Teach. Have Fun.</title>
+  <meta name="description" content="A Nordic startup which brings incredibly interesting hobbies from around the world to people of all ages.">
+  <link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body id="top">
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="Logo — home">Logo</a>
+
+      <nav class="desktop-nav" aria-label="Primary">
+        <button class="cat-trigger" id="catTrigger" aria-expanded="false" aria-controls="catPanel">
+          CATEGORIES
+          <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <a class="teach-link" href="#teachers">TEACH</a>
+        <span class="nav-divider" aria-hidden="true"></span>
+        <a class="pill pill-outline" href="#" role="button">LOGIN</a>
+        <a class="pill pill-filled" href="#" role="button">SIGNUP</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileDrawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Categories mega dropdown (desktop) -->
+    <div class="cat-panel" id="catPanel" aria-hidden="true">
+      <div class="container cat-panel-grid">
+        <ul class="cat-list" aria-label="Class categories">
+          <li><a href="#classes">Language</a></li>
+          <li><a class="has-sub" href="#classes">Cooking
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></a></li>
+          <li><a href="#classes">Music</a></li>
+          <li><a href="#classes">Arts &amp; Craft</a></li>
+          <li><a href="#classes">Yoga</a></li>
+          <li><a href="#classes">Academic</a></li>
+          <li><a href="#classes">Back To Roots</a></li>
+          <li><a href="#classes">Funteresting</a></li>
+        </ul>
+        <ul class="cat-list" aria-label="Language sub-categories">
+          <li><a href="#classes">All</a></li>
+          <li><a class="has-sub" href="#classes">Indian
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></a></li>
+          <li><a href="#classes">Norwegian</a></li>
+          <li><a href="#classes">Category 04</a></li>
+        </ul>
+        <img class="cat-quote" src="assets/images/quote-blob.png" width="430" height="359"
+             alt="Do anything, but let it produce joy — Walt Whitman" draggable="false">
+      </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile" aria-hidden="true">
+      <button class="drawer-cat-trigger" id="drawerCatTrigger" aria-expanded="false" aria-controls="drawerCatList">
+        CATEGORIES
+        <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <ul class="drawer-cat-list" id="drawerCatList" hidden>
+        <li><a href="#classes">Language</a></li>
+        <li><a href="#classes">Cooking</a></li>
+        <li><a href="#classes">Music</a></li>
+        <li><a href="#classes">Arts &amp; Craft</a></li>
+        <li><a href="#classes">Yoga</a></li>
+        <li><a href="#classes">Academic</a></li>
+        <li><a href="#classes">Back To Roots</a></li>
+        <li><a href="#classes">Funteresting</a></li>
+      </ul>
+      <a class="drawer-link" href="#teachers">TEACH</a>
+      <div class="drawer-actions">
+        <a class="pill pill-outline" href="#" role="button">LOGIN</a>
+        <a class="pill pill-filled" href="#" role="button">SIGNUP</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <img class="green-blob" src="assets/images/blob-green.png" width="210" height="465" aria-hidden="true" alt="" draggable="false">
+      <img class="hero-art" src="assets/images/hero-art.png" width="795" height="640" alt="A parent and two children exploring hobby classes together" draggable="false">
+      <img class="squiggle" src="assets/images/squiggle.png" width="70" height="130" aria-hidden="true" alt="" draggable="false">
+
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <h1 class="hero-tagline">
+            Hobbies
+            <svg class="heart" width="17" height="16" viewBox="0 0 24 22" aria-label="love" role="img"><path fill="#FC1C1C" d="M12 21S2.6 14.2 1 8.6C.1 5.2 2.3 1.9 5.8 1.5 8 1.3 10 2.4 12 4.7c2-2.3 4-3.4 6.2-3.2 3.5.4 5.7 3.7 4.8 7.1C21.4 14.2 12 21 12 21Z"/></svg>
+            Happiness
+            <svg class="heart" width="17" height="16" viewBox="0 0 24 22" aria-label="love" role="img"><path fill="#FC1C1C" d="M12 21S2.6 14.2 1 8.6C.1 5.2 2.3 1.9 5.8 1.5 8 1.3 10 2.4 12 4.7c2-2.3 4-3.4 6.2-3.2 3.5.4 5.7 3.7 4.8 7.1C21.4 14.2 12 21 12 21Z"/></svg>
+            Home
+          </h1>
+          <p class="hero-para">A Nordic startup which brings incredibly interesting hobbies from around the world to people of all ages.</p>
+
+          <form class="mail-form hero-form" novalidate>
+            <div class="mail-row">
+              <input class="mail-input" type="email" name="email" placeholder="Enter your email" autocomplete="email" required aria-label="Email address">
+              <button class="btn-solid" type="submit">
+                START EXPLORING
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10.5"/><path d="m10 8 4 4-4 4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+            <p class="form-msg" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title reveal">Explore. Enroll. Have&nbsp;Fun. Repeat&nbsp;–<br>here hobby meets happiness</h2>
+      </div>
+      <div class="features-grid">
+        <div class="f-col reveal">
+          <img src="assets/images/icon-learn.png" width="95" height="102" alt="" aria-hidden="true">
+          <h3>Learn something new</h3>
+          <p>Explore your passion and go beyond the physical and mental boundaries of time, age, gender or geography.</p>
+        </div>
+        <div class="f-col reveal">
+          <img src="assets/images/icon-teach.png" width="118" height="105" alt="" aria-hidden="true">
+          <h3>Skilled &amp; Passionate Teachers</h3>
+          <p>We offers Interactive classes by experts who are qualified and trusted.</p>
+        </div>
+        <div class="f-col reveal">
+          <img src="assets/images/icon-anywhere.png" width="100" height="102" alt="" aria-hidden="true">
+          <h3>Take classes anytime, anywhere</h3>
+          <p>Join sessions at your own convenience and pace, from the comforts of your home.</p>
+        </div>
+        <div class="f-col reveal">
+          <img src="assets/images/icon-pay.png" width="78" height="90" alt="" aria-hidden="true">
+          <h3>Pay as you go</h3>
+          <p>No enrollment fee for our classes. You only pay for the classes that you take. Your payment is Safe and secure with us.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DISCOVER CLASSES ============ -->
+    <section class="classes" id="classes">
+      <div class="container classes-head reveal">
+        <div class="classes-head-left">
+          <div class="classes-title-row">
+            <h2 class="section-title">Discover classes</h2>
+            <a class="show-all" href="#classes">SHOW ALL</a>
+          </div>
+          <p class="classes-sub">Choose from a variety of classes from around the world.</p>
+        </div>
+        <div class="toggle-row">
+          <span class="toggle-label" id="currencyLabel">Show prices in:</span>
+          <div class="currency-toggle" role="group" aria-labelledby="currencyLabel" id="currencyToggle">
+            <button type="button" class="cur-seg active" data-cur="NOK" aria-pressed="true">NOK</button>
+            <button type="button" class="cur-seg" data-cur="INR" aria-pressed="false">INR</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container cards">
+        <article class="card reveal" data-nok="kr 1000" data-nok-old="kr 2000" data-inr="₹1,499" data-inr-old="₹2,999">
+          <div class="card-media">
+            <img src="assets/images/class-1.jpg" alt="Bright colorful wooden alphabet letters" draggable="false">
+            <span class="badge" aria-label="60% off">60% OFF</span>
+            <button class="bookmark" type="button" aria-pressed="false" aria-label="Save this class">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path class="bm-path" d="M6 3h12v18l-6-4.5L6 21V3Z"/></svg>
+            </button>
+          </div>
+          <div class="card-body">
+            <span class="card-cat">LANGUAGE</span>
+            <h3 class="card-title">Class name – Lorem ipsum sit elit varsit lectusi sit amet</h3>
+            <p class="card-rating">by <b>John Doe</b>
+              <svg class="star" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#FFB051" d="m12 1.7 3.2 6.4 7.1 1-5.2 5 1.3 7-6.4-3.4L5.6 21l1.3-7-5.2-5 7.1-1L12 1.7Z"/></svg>
+              <span class="rate">4.7</span></p>
+            <p class="card-desc">Lorem ipsum dolor sit amet, varius consectetur varius entat consectet adipiscing elit. Ullamcorper…</p>
+          </div>
+          <div class="card-bar">
+            <span class="price"><s class="price-old">kr 2000</s><b class="price-now">kr 1000</b></span>
+            <button class="enroll" type="button">Enroll now</button>
+          </div>
+        </article>
+
+        <article class="card reveal" data-nok="kr 1000" data-nok-old="kr 2000" data-inr="₹1,499" data-inr-old="₹2,999">
+          <div class="card-media">
+            <img src="assets/images/class-2.jpg" alt="Toddler playing with colorful toy blocks" draggable="false">
+            <span class="badge" aria-label="60% off">60% OFF</span>
+            <button class="bookmark saved" type="button" aria-pressed="true" aria-label="Saved — remove from saved classes">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path class="bm-path" d="M6 3h12v18l-6-4.5L6 21V3Z"/></svg>
+            </button>
+          </div>
+          <div class="card-body">
+            <span class="card-cat">LANGUAGE</span>
+            <h3 class="card-title">Class name – Lorem ipsum sit elit varsit lectusi sit amet</h3>
+            <p class="card-rating">by <b>John Doe</b>
+              <svg class="star" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#FFB051" d="m12 1.7 3.2 6.4 7.1 1-5.2 5 1.3 7-6.4-3.4L5.6 21l1.3-7-5.2-5 7.1-1L12 1.7Z"/></svg>
+              <span class="rate">4.7</span></p>
+            <p class="card-desc">Lorem ipsum dolor sit amet, varius consectetur varius entat consectet adipiscing elit. Ullamcorper…</p>
+          </div>
+          <div class="card-bar">
+            <span class="price"><s class="price-old">kr 2000</s><b class="price-now">kr 1000</b></span>
+            <button class="enroll" type="button">Enroll now</button>
+          </div>
+        </article>
+
+        <article class="card reveal no-badge" data-nok="kr 1000" data-inr="₹1,499">
+          <div class="card-media">
+            <img src="assets/images/class-3.jpg" alt="Child enjoying an arts and crafts activity" draggable="false">
+            <button class="bookmark" type="button" aria-pressed="false" aria-label="Save this class">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path class="bm-path" d="M6 3h12v18l-6-4.5L6 21V3Z"/></svg>
+            </button>
+          </div>
+          <div class="card-body">
+            <span class="card-cat">LANGUAGE</span>
+            <h3 class="card-title">Class name – Lorem ipsum sit elit varsit lectusi sit amet</h3>
+            <p class="card-rating">by <b>John Doe</b>
+              <svg class="star" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#FFB051" d="m12 1.7 3.2 6.4 7.1 1-5.2 5 1.3 7-6.4-3.4L5.6 21l1.3-7-5.2-5 7.1-1L12 1.7Z"/></svg>
+              <span class="rate">4.7</span></p>
+            <p class="card-desc">Lorem ipsum dolor sit amet, varius consectetur varius entat consectet adipiscing elit. Ullamcorper…</p>
+          </div>
+          <div class="card-bar">
+            <span class="price"><b class="price-now">kr 1000</b></span>
+            <button class="enroll" type="button">Enroll now</button>
+          </div>
+        </article>
+
+        <article class="card reveal" data-nok="kr 1000" data-nok-old="kr 2000" data-inr="₹1,499" data-inr-old="₹2,999">
+          <div class="card-media">
+            <img src="assets/images/class-4.jpg" alt="Kid learning letters with colorful toys" draggable="false">
+            <span class="badge" aria-label="60% off">60% OFF</span>
+            <button class="bookmark" type="button" aria-pressed="false" aria-label="Save this class">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path class="bm-path" d="M6 3h12v18l-6-4.5L6 21V3Z"/></svg>
+            </button>
+          </div>
+          <div class="card-body">
+            <span class="card-cat">LANGUAGE</span>
+            <h3 class="card-title">Class name – Lorem ipsum sit elit varsit lectusi sit amet</h3>
+            <p class="card-rating">by <b>John Doe</b>
+              <svg class="star" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#FFB051" d="m12 1.7 3.2 6.4 7.1 1-5.2 5 1.3 7-6.4-3.4L5.6 21l1.3-7-5.2-5 7.1-1L12 1.7Z"/></svg>
+              <span class="rate">4.7</span></p>
+            <p class="card-desc">Lorem ipsum dolor sit amet, varius consectetur varius entat consectet adipiscing elit. Ullamcorper…</p>
+          </div>
+          <div class="card-bar">
+            <span class="price"><s class="price-old">kr 2000</s><b class="price-now">kr 1000</b></span>
+            <button class="enroll" type="button">Enroll now</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ TEACHERS ============ -->
+    <section class="teachers" id="teachers">
+      <h2 class="section-title container reveal">Meet our teachers</h2>
+      <div class="t-row">
+        <div class="t-nav reveal" aria-label="Carousel navigation">
+          <button type="button" id="tPrev" aria-label="Previous teachers">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 6 9 12 15 18"/></svg>
+          </button>
+          <button type="button" id="tNext" aria-label="Next teachers">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg>
+          </button>
+        </div>
+        <div class="t-viewport">
+          <div class="t-track" id="tTrack">
+            <div class="t-card"><div class="t-photo"><img src="assets/images/teacher-1.jpg" alt="Karandeep, yoga teacher" draggable="false"></div>
+              <div class="t-foot"><h3>Karandeep</h3><span class="t-cat">YOGA</span></div></div>
+            <div class="t-card"><div class="t-photo"><img src="assets/images/teacher-2.jpg" alt="Asier, arts &amp; craft teacher" draggable="false"></div>
+              <div class="t-foot"><h3>Åsier</h3><span class="t-cat">ARTS &amp; CRAFT</span></div></div>
+            <div class="t-card"><div class="t-photo"><img src="assets/images/teacher-3.jpg" alt="Marius Neilson, academics teacher" draggable="false"></div>
+              <div class="t-foot"><h3>Marius Neilson</h3><span class="t-cat">ACADEMICS</span></div></div>
+            <div class="t-card"><div class="t-photo"><img src="assets/images/teacher-4.jpg" alt="Nichola, language teacher" draggable="false"></div>
+              <div class="t-foot"><h3>Nichola</h3><span class="t-cat">LANGUAGE</span></div></div>
+            <div class="t-card"><div class="t-photo"><img src="assets/images/teacher-5.jpg" alt="Julia Roberts, arts &amp; craft teacher" draggable="false"></div>
+              <div class="t-foot"><h3>Julia Roberts</h3><span class="t-cat">ARTS &amp; CRAFT</span></div></div>
+            <div class="t-card"><div class="t-photo"><img src="assets/images/teacher-6.jpg" alt="Matthew Owen, academics teacher" draggable="false"></div>
+              <div class="t-foot"><h3>Matthew Owen</h3><span class="t-cat">ACADEMICS</span></div></div>
+            <div class="t-card"><div class="t-photo"><img src="assets/images/teacher-7.jpg" alt="Dave Lee, music teacher" draggable="false"></div>
+              <div class="t-foot"><h3>Dave Lee</h3><span class="t-cat">MUSIC</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-pill reveal">
+          <h2>Start learning new skills today and<br>pursue your passion</h2>
+          <p>Join the community of global learners and start exploring today.</p>
+          <form class="mail-form cta-form" novalidate>
+            <div class="mail-row cta-row">
+              <input class="mail-input cta-input" type="email" name="email" placeholder="Enter your email" autocomplete="email" required aria-label="Email address">
+              <button class="btn-white" type="submit">
+                GET STARTED
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10.5"/><path d="m10 8 4 4-4 4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+            <p class="form-msg" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid reveal">
+      <div class="f-group">
+        <h4>Class Categories</h4>
+        <ul>
+          <li><a href="#classes">Language</a></li>
+          <li><a href="#classes">Cooking</a></li>
+          <li><a href="#classes">Music</a></li>
+          <li><a href="#classes">Arts &amp; Craft</a></li>
+          <li><a href="#classes">Yoga</a></li>
+          <li><a href="#classes">Academic</a></li>
+          <li><a href="#classes">Back To Roots</a></li>
+          <li><a href="#classes">Funteresting</a></li>
+        </ul>
+      </div>
+      <div class="f-group">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="f-group">
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="#classes">All Classes</a></li>
+        </ul>
+      </div>
+      <div class="f-group">
+        <h4>Teach</h4>
+        <ul>
+          <li><a href="#">Become A Teacher</a></li>
+        </ul>
+      </div>
+      <a class="sell-card" href="#" aria-label="Sell your products with us">
+        <img src="assets/images/footer-plates.jpg" alt="Stacked colorful ceramic plates" draggable="false">
+        <span>SELL YOUR PRODUCTS WITH US</span>
+      </a>
+    </div>
+
+    <div class="container">
+      <hr class="footer-divider">
+      <div class="footer-bottom">
+        <span class="copyright">© Project 2021. All rights reserved.</span>
+        <span class="made-with">Made with
+          <svg width="17" height="16" viewBox="0 0 24 22" aria-label="love" role="img"><path fill="#FC1C1C" d="M12 21S2.6 14.2 1 8.6C.1 5.2 2.3 1.9 5.8 1.5 8 1.3 10 2.4 12 4.7c2-2.3 4-3.4 6.2-3.2 3.5.4 5.7 3.7 4.8 7.1C21.4 14.2 12 21 12 21Z"/></svg>
+          by SimplePlan</span>
+        <nav class="socials" aria-label="Social media">
+          <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.6 1.6-1.6h1.7V4.2c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.4V14h2.7v8h3.4Z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.49 2.49 0 1 1 5 8.47a2.49 2.49 0 0 1-.02-4.97ZM3 9.75h4v10.75H3V9.75Zm6.5 0h3.8v1.47h.06c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.87 2.6 4.87 6V20.5h-4v-4.6c0-1.1-.02-2.52-1.57-2.52-1.57 0-1.81 1.2-1.81 2.44v4.68h-4V9.75Z"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 5.9c-.7.3-1.5.6-2.3.7a4.1 4.1 0 0 0 1.8-2.3c-.8.5-1.7.8-2.6 1a4.1 4.1 0 0 0-7 3.7A11.6 11.6 0 0 1 3.4 4.7a4.1 4.1 0 0 0 1.3 5.5c-.7 0-1.3-.2-1.9-.5a4.1 4.1 0 0 0 3.3 4c-.6.2-1.2.2-1.9.1a4.1 4.1 0 0 0 3.8 2.9A11.6 11.6 0 0 1 2 18.9a16.4 16.4 0 0 0 8.9 2.6c10.7 0 16.6-8.9 16.3-16.9.8-.6 1.4-1.3 1.8-2.2-.7.3-1.4.5-2 .6Zm-2.2 0-.2.1.2-.1Z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.9-.5-5.6a2.8 2.8 0 0 0-2-2C18.7 3.9 12 3.9 12 3.9s-6.7 0-8.5.5a2.8 2.8 0 0 0-2 2C1 8.1 1 12 1 12s0 3.9.5 5.6a2.8 2.8 0 0 0 2 2c1.8.5 8.5.5 8.5.5s6.7 0 8.5-.5a2.8 2.8 0 0 0 2-2c.5-1.7.5-5.6.5-5.6ZM9.8 8.7v6.6l5.6-3.3-5.6-3.3Z"/></svg></a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating widgets -->
+  <div class="chat-widget" id="chatWidget">
+    <button class="chat-btn" id="chatBtn" aria-label="Open support chat" aria-expanded="false">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.3c-1.5 0-2.9-.3-4-.9L3 20.5l1.6-5.3a8 8 0 0 1-.9-3.7A8.4 8.4 0 0 1 12.5 3 8.4 8.4 0 0 1 21 11.5Z"/></svg>
+    </button>
+    <div class="chat-panel" id="chatPanel" aria-hidden="true">
+      <div class="chat-head">
+        <span class="chat-dot" aria-hidden="true"></span> SimplePlan Support
+        <button class="chat-close" id="chatClose" aria-label="Close chat">×</button>
+      </div>
+      <div class="chat-body">
+        <p class="chat-msg">Hi there! 👋 How can we help you with your classes today?</p>
+      </div>
+      <form class="chat-input-row" id="chatForm">
+        <input type="text" id="chatInput" placeholder="Type a message…" aria-label="Chat message">
+        <button type="submit" aria-label="Send message">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <button class="top-btn" id="topBtn" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 15 12 9 18 15"/></svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/script.js?v=2"></script>
+</body>
+</html>
